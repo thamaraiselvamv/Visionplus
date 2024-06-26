@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input  id="num1" type="number" value="">
+
+   <br><br>
+   <input  id="num2" type="number" value="">
+   <br><br>
+   <button onclick="a()">ADD</button>
+   <br><br>
+   <h3 id="result">result</h3>
+   <script>
+    var n1=document.getElementById("num1")
+    var n2=document.getElementById("num2")
+    var ans=document.getElementById("result")
+
+    function a(){
+        var n1_val=Number(n1.value)
+        var n2_val=Number(n2.value)
+
+        var add=n1_val+n2_val
+        ans.textContent="Result is : "+add
+        
+        
+    }
+   
+
+   </script>
+   </body>
+</html>
